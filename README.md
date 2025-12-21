@@ -12,7 +12,7 @@ This site features a modern **Dark/Light theme toggle**, **Scroll Reveal animati
 
 ## 📸 Screenshots
 
-![Portfolio Preview](screenshot.png) 
+![Portfolio Preview](Screenshot.png) 
 
 ---
 
