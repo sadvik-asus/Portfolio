@@ -1,0 +1,492 @@
+:root {
+    /* Pure Black Main Background */
+    --bg-color: #000000;
+    
+    /* Box Color: Distinct Dark Grey (Lighter than background) */
+    --box-bg: #111111; 
+    
+    --text-color: #ffffff;
+    
+    /* Neon Colors */
+    --main-color: #00eeff;  /* Cyan */
+    --gradient-color: #0061ff; /* Electric Blue */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    /* Subtle grid pattern background */
+    background-image: radial-gradient(#1a1a1a 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #222;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: 700;
+    cursor: pointer;
+    /* Gradient Text */
+    background: linear-gradient(45deg, var(--main-color), var(--gradient-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
+}
+
+.menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+/* --- OPTIMIZED BOX LAYOUT LOGIC --- */
+
+/* 1. General Box Styling */
+section, .hero {
+    background: var(--box-bg);
+    border-radius: 30px;
+    
+    /* Lighter border to make the box shape visible */
+    border: 1px solid #2a2a2a; 
+    
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    position: relative;
+    overflow: hidden;
+    
+    width: 90%;           
+    max-width: 1200px;     
+    margin: 2rem auto;     
+    padding: 4rem 3rem;   
+}
+
+/* 2. Hero Section (Home) - Sized to fill screen */
+.hero {
+    margin-top: 100px;    /* Clear the fixed navbar */
+    min-height: 85vh;     /* Occupy 85% of viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, #0f0f0f 0%, #000000 100%);
+}
+
+/* 3. Other Sections - Sized to fit content */
+section {
+    height: auto;         /* Box height adjusts to content */
+    margin-bottom: 2rem;
+}
+
+/* Typography & Content */
+.hero-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 10px 0;
+    /* Gradient Text */
+    background: linear-gradient(to right, var(--main-color), var(--gradient-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-content p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.hero-content span {
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    margin: 0 1rem 2rem 0;
+    transition: 0.4s;
+    text-decoration: none;
+    box-shadow: 0 0 5px var(--main-color);
+}
+
+.social-icons a:hover {
+    background: var(--main-color);
+    color: #000;
+    box-shadow: 0 0 20px var(--main-color), 0 0 40px var(--main-color);
+    transform: translateY(-5px);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2.5rem;
+    background: var(--main-color);
+    border-radius: 3rem;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px var(--main-color), 
+                0 0 40px var(--main-color), 
+                0 0 80px var(--main-color);
+    background: transparent;
+    color: var(--main-color);
+    transform: scale(1.05);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Gradient Text */
+    background: linear-gradient(to right, var(--main-color), var(--gradient-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.education-timeline {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.edu-box {
+    background: #000;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #222;
+    min-width: 250px;
+    transition: 0.3s;
+}
+
+.edu-box:hover {
+    border-color: var(--main-color);
+    box-shadow: 0 0 15px rgba(0, 238, 255, 0.2);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.skill-card {
+    background: #000;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: 0.4s;
+    border: 1px solid #222;
+}
+
+.skill-card:hover {
+    border-color: var(--main-color);
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.4);
+    transform: translateY(-5px);
+}
+
+.skill-card i {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px var(--main-color);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #000;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 2rem;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #222;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--main-color);
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.3);
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.badge {
+    background: rgba(0, 238, 255, 0.1);
+    color: var(--main-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid var(--main-color);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.tech-stack {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-stack span {
+    font-size: 0.8rem;
+    border: 1px solid #444;
+    padding: 2px 8px;
+    border-radius: 12px;
+    color: #aaa;
+}
+
+.btn-small {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 600;
+    margin-top: auto;
+    transition: 0.3s;
+}
+
+.btn-small:hover {
+    text-shadow: 0 0 10px var(--main-color);
+    letter-spacing: 1px;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.info-item {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.info-item i {
+    color: var(--main-color);
+    margin-right: 10px;
+    text-shadow: 0 0 5px var(--main-color);
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; 
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    /* Mobile Box Adjustments */
+    section, .hero {
+        width: 95%;
+        margin: 1.5rem auto;
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* --- ACTIVE NAVIGATION STATE --- */
+.nav-links a.active {
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
+    border-bottom: 2px solid var(--main-color); /* Optional: Adds a line under the text */
+}
+/* --- LIGHT MODE THEME --- */
+.light-mode {
+    --bg-color: #f0f2f5;       /* Light Grey Background */
+    --box-bg: #ffffff;         /* Pure White Cards */
+    --text-color: #111111;     /* Dark Text */
+    --main-color: #0061ff;     /* We switch Cyan to Electric Blue for better visibility */
+    --gradient-color: #00c6ff; /* Secondary blue */
+}
+
+/* Fix shadows for light mode so they aren't too harsh */
+body.light-mode section, 
+body.light-mode .hero {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Soft shadow */
+    border: 1px solid #e2e8f0;
+}
+
+body.light-mode .navbar {
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+body.light-mode .project-card,
+body.light-mode .skill-card,
+body.light-mode .edu-box {
+    background: #f8fafc; /* Very light grey for inner cards */
+    border: 1px solid #e2e8f0;
+}
+
+/* Theme Button Style */
+.theme-btn {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-left: 20px;
+    transition: 0.3s;
+}
+.theme-btn:hover {
+    color: var(--main-color);
+    transform: rotate(180deg); /* Spin effect on hover */
+}
+
+/* --- FIXES FOR LIGHT MODE VISIBILITY --- */
+
+/* 1. Fix Project & Skill Card Titles (Was forced to #fff) */
+body.light-mode .card-content h3, 
+body.light-mode .skill-card h3,
+body.light-mode .edu-box h4 {
+    color: #111111; /* Turn text dark black */
+}
+
+/* 2. Fix Tech Stack Text (Was #aaa which is too light for white paper) */
+body.light-mode .tech-stack span {
+    color: #333333; 
+    border-color: #cbd5e1; /* Darker border */
+    background: #e2e8f0;   /* Slight grey pill background */
+}
+
+/* 3. Fix Skill Icons */
+body.light-mode .skill-card i {
+    text-shadow: none; /* Remove neon glow so it looks clean */
+}
+
+/* 4. Fix Navbar Links (Ensure they are dark) */
+body.light-mode .nav-links a {
+    color: #333;
+}
+body.light-mode .nav-links a:hover,
+body.light-mode .nav-links a.active {
+    color: var(--main-color); /* Blue in light mode */
+}
+
+/* 5. Fix "Get In Touch" Icons */
+body.light-mode .info-item i {
+    text-shadow: none;
+}
+body.light-mode .info-item span {
+    color: #222;
+}
+
+/* 6. Fix Footer */
+body.light-mode .footer p {
+    color: #444;
+}
+
+/* --- FIX HERO SECTION VISIBILITY IN LIGHT MODE --- */
+
+/* 1. Force the Hero Box Background to White/Light Grey */
+body.light-mode .hero {
+    background: var(--box-bg); /* Sets it to White */
+    /* Optional: A subtle light gradient so it looks premium, not flat */
+    background: radial-gradient(circle at center, #ffffff 0%, #f1f5f9 100%);
+}
+
+/* 2. Fix "Hello, I'm" text */
+body.light-mode .hero-content h3 {
+    color: #111111; /* Force Dark Black */
+}
+
+/* 3. Fix the "I am a..." text */
+body.light-mode .hero-content p {
+    color: #333333; /* Dark Grey */
+}
+
+/* 4. Ensure the Name Gradient looks good on white */
+body.light-mode .hero-content h1 {
+    /* We use the darker blue variable for better contrast on white */
+    background: linear-gradient(to right, #0061ff, #00c6ff); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
