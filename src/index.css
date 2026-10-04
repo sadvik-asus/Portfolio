@@ -9,6 +9,9 @@
   --accent-2: #ec4899; /* Pink */
   --accent-3: #8b5cf6; /* Violet */
   --border-color: rgba(255, 255, 255, 0.08);
+  --badge-bg: rgba(255, 255, 255, 0.05);
+  --badge-border: rgba(255, 255, 255, 0.1);
+  --badge-hover-bg: rgba(255, 255, 255, 0.1);
 }
 
 body.light-mode {
@@ -17,6 +20,9 @@ body.light-mode {
   --text-primary: #0f172a;
   --text-secondary: #475569;
   --border-color: rgba(0, 0, 0, 0.1);
+  --badge-bg: rgba(0, 0, 0, 0.05);
+  --badge-border: rgba(0, 0, 0, 0.1);
+  --badge-hover-bg: rgba(0, 0, 0, 0.1);
 }
 
 .social-link:hover {
@@ -131,12 +137,12 @@ a {
 
 .btn-secondary {
   background: transparent;
-  color: white;
+  color: var(--text-primary);
   border: 1px solid var(--border-color);
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--badge-bg);
 }
 
 /* Badges */
@@ -145,15 +151,15 @@ a {
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 500;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--badge-bg);
+  border: 1px solid var(--badge-border);
   color: var(--text-secondary);
   transition: all 0.2s ease;
 }
 
 .badge:hover {
   color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--badge-hover-bg);
   border-color: var(--accent-1);
 }
 
@@ -165,7 +171,7 @@ a {
   padding: 1.5rem 0;
   z-index: 100;
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .nav-container {
