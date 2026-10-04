@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Github } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -23,7 +24,7 @@ const Navbar = () => {
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="https://github.com/sadvik-asus" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            GitHub
+            <Github size={18} /> GitHub
           </a>
         </motion.div>
       </div>
