@@ -17,17 +17,16 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
           >
-            CS Student | AI/ML Engineer & Data Scientist
+            AI/ML Engineer | Systems-Level ML & Security
           </motion.div>
           
           <h1>
-            Architecting <br />
-            <span className="gradient-text">Intelligent Systems</span>
+            Building where ML meets <br />
+            <span className="gradient-text">Infrastructure</span>
           </h1>
           
           <p>
-            Turning data into predictions | Python, TensorFlow, & Scikit-Learn <br />
-            Currently building: <span className="gradient-text">sadvik-asus</span>
+            Final-year CSE (AI/ML) engineer building in-network intelligence, behavioral security, and retrieval-augmented systems.
           </p>
 
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2rem' }}>

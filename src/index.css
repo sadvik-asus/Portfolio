@@ -11,6 +11,18 @@
   --border-color: rgba(255, 255, 255, 0.08);
 }
 
+body.light-mode {
+  --bg-dark: #f8fafc;
+  --bg-card: rgba(255, 255, 255, 0.7);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --border-color: rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover {
+  color: var(--accent-1);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
