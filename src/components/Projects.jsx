@@ -21,6 +21,12 @@ const projects = [
     github: "https://github.com/sadvik-asus/Health-insurance-prediction"
   },
   {
+    title: "P4-DDoS-Mitigation",
+    desc: "A containerized In-Network DDoS Mitigation system using P4 and BMv2 to detect and drop volumetric SYN floods at line-rate without CPU overhead.",
+    tags: ["P4", "Python", "Networking", "Cybersecurity"],
+    github: "https://github.com/sadvik-asus/P4-DDoS-Mitigation"
+  },
+  {
     title: "CiteRight",
     desc: "A full-stack AI app built with React, FastAPI, Groq, and Supabase that grounds LLM generation in your real documents. Eliminates hallucinations by verifying claims.",
     tags: ["React", "FastAPI", "RAG", "LLM", "Python"],
