@@ -15,6 +15,12 @@ const projects = [
     github: "https://github.com/sadvik-asus/voice-cloning-detector"
   },
   {
+    title: "Health-insurance-prediction",
+    desc: "End-to-end data science pipeline that predicts whether health insurance customers will be interested in purchasing vehicle insurance. Optimizes cross-selling strategy and maximizes revenue.",
+    tags: ["Jupyter Notebook", "Machine Learning", "Data Science"],
+    github: "https://github.com/sadvik-asus/Health-insurance-prediction"
+  },
+  {
     title: "CiteRight",
     desc: "A full-stack AI app built with React, FastAPI, Groq, and Supabase that grounds LLM generation in your real documents. Eliminates hallucinations by verifying claims.",
     tags: ["React", "FastAPI", "RAG", "LLM", "Python"],
