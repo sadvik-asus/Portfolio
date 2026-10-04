@@ -9,6 +9,12 @@ const projects = [
     github: "https://github.com/sadvik-asus/Self-Evolving-AI-HoneyPot"
   },
   {
+    title: "voice-cloning-detector",
+    desc: "AI-powered real-time detection of cloned voices in calls. SIH 2026 - SIH26104 (Team Victrix). Wav2Vec2 deepfake classifier + explainable signal forensics. FastAPI + React.",
+    tags: ["FastAPI", "React", "Wav2Vec2", "Deepfake Detection"],
+    github: "https://github.com/sadvik-asus/voice-cloning-detector"
+  },
+  {
     title: "CiteRight",
     desc: "A full-stack AI app built with React, FastAPI, Groq, and Supabase that grounds LLM generation in your real documents. Eliminates hallucinations by verifying claims.",
     tags: ["React", "FastAPI", "RAG", "LLM", "Python"],
