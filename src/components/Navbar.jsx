@@ -22,6 +22,9 @@ const Navbar = () => {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
+          <a href="https://github.com/sadvik-asus" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            GitHub
+          </a>
         </motion.div>
       </div>
     </nav>
