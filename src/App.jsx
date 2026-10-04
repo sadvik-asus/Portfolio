@@ -2,7 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import { Github, Linkedin, Instagram } from 'lucide-react';
+import { GitBranch, Briefcase, Camera } from 'lucide-react';
 
 function App() {
   return (
@@ -19,10 +19,10 @@ function App() {
             <GitBranch size={24} />
           </a>
           <a href="https://www.linkedin.com/in/sadvikkumar" target="_blank" rel="noreferrer" className="social-link" style={{ transition: 'color 0.2s' }}>
-            <Linkedin size={24} />
+            <Briefcase size={24} />
           </a>
           <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-link" style={{ transition: 'color 0.2s' }}>
-            <Instagram size={24} />
+            <Camera size={24} />
           </a>
         </div>
         <p>© 2026 Sadvik Kumar. All rights reserved.</p>
