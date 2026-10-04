@@ -28,7 +28,7 @@ const projects = [
   },
   {
     title: "CiteRight",
-    desc: "A full-stack AI app built with React, FastAPI, Groq, and Supabase that grounds LLM generation in your real documents. Eliminates hallucinations by verifying claims.",
+    desc: "CiteRight: A full-stack AI app built with React, FastAPI, Groq, and Supabase that grounds LLM generation in your real documents. It eliminates hallucinations by verifying every claim and providing exact page-level citations for maximum trust.",
     tags: ["React", "FastAPI", "RAG", "LLM", "Python"],
     github: "https://github.com/sadvik-asus/CiteRight",
     live: "https://cite-right-nine.vercel.app"
