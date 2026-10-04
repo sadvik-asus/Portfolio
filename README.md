@@ -1,16 +1,59 @@
-# React + Vite
+# Sadvik Kumar - Personal Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, animated, and fully responsive personal portfolio website built to showcase my projects in AI/ML Engineering, Data Science, and Full Stack Development.
 
-Currently, two official plugins are available:
+![Portfolio Preview](./src/assets/hero.png) *(Preview placeholder)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Features
 
-## React Compiler
+- **Dynamic Hero Section**: Engaging animated introductory section featuring my core competencies.
+- **Projects Showcase**: A clean, grid-based layout detailing my latest work in Deep Learning, Federated Learning, and Cybersecurity.
+- **Glassmorphism UI**: Beautiful, modern frosted glass card designs for projects.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing.
+- **Smooth Animations**: Powered by Framer Motion for buttery-smooth page transitions and element reveals.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the Oxlint configuration
+- **Framework**: [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Styling**: Vanilla CSS (CSS3 with custom properties and Flexbox/Grid layouts)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🚀 Getting Started
+
+To run this project locally on your machine, follow these steps:
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/sadvik-asus/Portfolio.git
+   cd Portfolio
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **View the site**
+   Open your browser and navigate to the local URL provided by Vite (usually `http://localhost:5173`).
+
+## 📬 Connect with Me
+
+- **GitHub**: [@sadvik-asus](https://github.com/sadvik-asus)
+- **Role**: CS Student | AI/ML Engineer & Data Scientist
+- **Focus**: Turning data into predictions using Python, TensorFlow, & Scikit-Learn.
+
+---
+
+*Designed and engineered by Sadvik Kumar (2026)*
