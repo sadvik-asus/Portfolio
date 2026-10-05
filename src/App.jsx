@@ -15,13 +15,13 @@ function App() {
       
       <footer style={{ textAlign: 'center', padding: '3rem 0', color: 'var(--text-secondary)', borderTop: '1px solid var(--border-color)', marginTop: '4rem' }}>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', marginBottom: '1.5rem' }}>
-          <a href="https://github.com/sadvik-asus" target="_blank" rel="noreferrer" className="social-link" style={{ transition: 'color 0.2s' }}>
+          <a href="https://github.com/sadvik-asus" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub Profile" style={{ transition: 'color 0.2s' }}>
             <GitBranch size={24} />
           </a>
-          <a href="https://www.linkedin.com/in/sadvikkumar" target="_blank" rel="noreferrer" className="social-link" style={{ transition: 'color 0.2s' }}>
+          <a href="https://www.linkedin.com/in/sadvikkumar" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn Profile" style={{ transition: 'color 0.2s' }}>
             <Briefcase size={24} />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-link" style={{ transition: 'color 0.2s' }}>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram Profile" style={{ transition: 'color 0.2s' }}>
             <Camera size={24} />
           </a>
         </div>
