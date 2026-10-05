@@ -73,7 +73,7 @@ const Skills = () => {
               variants={cardVariants}
               whileHover={{ scale: 1.02 }}
             >
-              <div style={{ color: 'var(--accent-1)', marginBottom: '1rem' }}>
+              <div style={{ color: 'var(--accent-1)', marginBottom: '1rem' }} aria-hidden="true">
                 {skill.icon}
               </div>
               <h3 style={{ fontSize: '1.3rem', marginBottom: '0.8rem' }}>{skill.title}</h3>
