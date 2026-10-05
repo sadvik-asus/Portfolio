@@ -94,12 +94,12 @@ const Projects = () => {
               
               <div className="project-links">
                 {project.github && (
-                  <a href={project.github} target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>
                     <GitBranch size={16} /> Code
                   </a>
                 )}
                 {project.live && (
-                  <a href={project.live} target="_blank" rel="noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>
+                  <a href={project.live} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.9rem' }}>
                     <ExternalLink size={16} /> Live Demo
                   </a>
                 )}
