@@ -1,5 +1,7 @@
 # Sadvik Kumar - Personal Portfolio 🚀
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A modern, animated, and fully responsive personal portfolio website built to showcase my projects in AI/ML Engineering, Data Science, and Full Stack Development.
 
 ![Portfolio Preview](./src/assets/hero.png) *(Preview placeholder)*
