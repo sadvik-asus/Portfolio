@@ -9,3 +9,10 @@ Thank you for your interest in contributing! This is my personal portfolio, so c
 4. Submit a pull request.
 
 Please ensure your code follows the existing style and conventions.
+
+## Local Development
+To run this project locally, clone the repo and run:
+```bash
+npm install
+npm run dev
+```
